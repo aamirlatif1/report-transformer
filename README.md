@@ -1,6 +1,7 @@
 # XML Report transforming Tool
 
 Tool to transform report files to desired output format (currently only wiki output format supported)
+On start first it transforms existing files in input directory and then keep on watching to this directory for further files. 
 
 ##### Build:
 (requires Java 8 or higher)
@@ -10,7 +11,6 @@ mvn clean install
 
 ##### Usage by example:
 
-###### UPLOAD of n randomly generated files (key = UUID), each 2kB size
 ```
 java -jar target/reporttransformer.jar -i <input directory> -o <output directory> --outputFormat <wiki> -t <number of threads>
 ```
